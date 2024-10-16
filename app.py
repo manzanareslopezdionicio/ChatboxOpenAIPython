@@ -1,7 +1,7 @@
 import streamlit as st
 
 #Variables de secion de mensajes
-st.title("🤖 Asistente Virtual")
+st.title("🤖 Asistente Virtual - IA")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
