@@ -7,7 +7,7 @@ st.header("Esto es un encabezado")
 st.subheader("Esto es un sub encabezado")
 st.text("Hola esto es un texto")
 nombre  = "Dionicio"
-st.text(f"Hola {nombre}, esto es un texto")
+st.text(f"Hola {nombre}, esto es un texto de prueba")
 st.markdown("# Este es un markdown h1 \n ### Este es un h2 \n ### Este es un h3")
 st.write("Este es una mensaje con WRITE")
 st.write("## Este es un texto de markdown")
