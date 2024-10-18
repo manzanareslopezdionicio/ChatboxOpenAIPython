@@ -1,5 +1,6 @@
 import streamlit as st
-import PIL as image
+
+
 
 #Textos en pantalla
 st.title("Curso de Streamlit")
@@ -41,13 +42,12 @@ st.write(color)
 
 st.button("Enviar", type="primary")
 st.button("Say hello", icon=":material/mood:", use_container_width=True)
-st.link_button("Go to gallery", "https://streamlit.io/gallery")
+st.link_button("Go to gallery", "https://streamlit.io/gallery", type="primary")
 
 #Abrir una Archivo
 st.image("img/chatbot.png")
-st.audio("musica/Elton John - Sacrifice.mp3")
+st.audio("musica/Elton John - Sacrifice.mp3", loop=True)
 st.video("video/Video_Streamlit.mp4")
 
 st.subheader("Archivo de imagen")
-img = Image.open("img/chatbot.png")
-st.image(img, width=300, caption="Simple Imagen")
+st.image("img/chatbot.png", width=300, caption="Simple Imagen")
