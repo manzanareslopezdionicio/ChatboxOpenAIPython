@@ -42,6 +42,7 @@ st.button("Enviar", type="primary")
 st.button("Say hello", icon=":material/mood:", use_container_width=True)
 st.link_button("Go to gallery", "https://streamlit.io/gallery")
 
+#Abrir una Archivo
 st.image("img/chatbot.png")
 st.audio("musica/Elton John - Sacrifice.mp3")
 st.video("video/Video_Streamlit.mp4")
