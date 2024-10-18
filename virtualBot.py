@@ -12,7 +12,7 @@ st.set_page_config(page_title='Mi APP IA', page_icon=img,
                    initial_sidebar_state="collapsed")
 
 #titulo CharBot
-st.markdown("# Estamos en la etapa de prueba. h1 \n ### Bienvenidos h2 \n ### Este es un h3")
+st.markdown("### Estamos en la etapa de prueba \n # Bienvenidos ")
 
 st.title("🤖 Asistente Virtual - IA")
 
