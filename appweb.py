@@ -1,10 +1,16 @@
 import streamlit as st
 
+home = st.Page  (
+    page="views/home.py",
+    title="Inicio",
+    icon=":material/home:",
+    default=True,
+)
+
 acerca_de_page = st.Page(
     page="views/acerca_de.py",
     title="Acerca de",
     icon=":material/account_circle:",
-    default=True,
 )
 project_1_page = st.Page(
     page="views/ventas.py",
@@ -19,10 +25,11 @@ project_2_page = st.Page(
 
 pg = st.navigation(
     {
-        "Información:": [acerca_de_page],
+        "Información:": [home, acerca_de_page],
         "Projectos:": [project_1_page, project_2_page],
     }
 )
+
 
 
 # --- SHARED ON ALL PAGES ---
@@ -31,4 +38,4 @@ st.sidebar.markdown("Elaborado con ❤️ por [Streamlit](https://streamlit.io/g
 
 
 # --- RUN NAVIGATION ---
-#pg.run()
+pg.run()

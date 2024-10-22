@@ -1,7 +1,5 @@
 import streamlit as st
 
-
-
 #Textos en pantalla
 st.title("Curso de Streamlit")
 st.header("Esto es un encabezado")
@@ -25,7 +23,7 @@ st.exception("Esto es una excepcion")
 nombres = st.text_input("Ingresa tu nombre")
 st.write(nombres)
 
-mensaje = st.text_area("Ingresa tu nombre")
+mensaje = st.text_area("Ingresa su descripción")
 st.write(mensaje)
 
 numero = st.number_input("Ingresar un numero", 1, 25)
@@ -41,8 +39,8 @@ color = st.color_picker("Selecciona un color")
 st.write(color)
 
 st.button("Enviar", type="primary")
-st.button("Say hello", icon=":material/mood:", use_container_width=True)
-st.link_button("Go to gallery", "https://streamlit.io/gallery", type="primary")
+st.button("Mostrar", icon=":material/mood:", use_container_width=True)
+st.link_button("Ir link", "https://streamlit.io/gallery", type="primary")
 
 #Abrir una Archivo
 st.image("img/chatbot.png")
