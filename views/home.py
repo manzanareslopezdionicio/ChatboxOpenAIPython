@@ -37,53 +37,53 @@ with st.container():
         st.empty()
     
     #Servicios
-    with st.container():
-        st.write("---")
-        st.header("Servicios")
-        #st.write("##")
-        imagen_columna, texto_columna = st.columns((1,2))
-        with imagen_columna:
-            st.image("img/chatbot.png")
+with st.container():
+    st.write("---")
+    st.header("Servicios")
+    #st.write("##")
+    imagen_columna, texto_columna = st.columns((1,2))
+    with imagen_columna:
+        st.image("img/diseño.jpg")
         
-        with texto_columna:
-            st.subheader("Diseño de aplicaciones")
-            st.write(
-                """
-                Si en tus procesos diarios tienes que introducir información en diferentes fuentes de datos o bien tienes que trabajar con documentación en papel, es hora de pensar en implementar una aplicación en tu negocio para potenciar y optimizar el funcionamiento de los procesos diarios.
-                """
-            )
-            st.write("[Ver servicios > ](https://streamlit.io/)")
+    with texto_columna:
+        st.subheader("Diseño de aplicaciones")
+        st.write(
+            """
+            Si en tus procesos diarios tienes que introducir información en diferentes fuentes de datos o bien tienes que trabajar con documentación en papel, es hora de pensar en implementar una aplicación en tu negocio para potenciar y optimizar el funcionamiento de los procesos diarios.
+            """
+        )
+        st.write("[Ver servicios > ](https://streamlit.io/)")
     
-    with st.container():
-        st.write("---")
-        #st.write("##")
-        imagen_columna, texto_columna = st.columns((1,2))
-        with imagen_columna:
-            st.image("img/chatbot.png")
+with st.container():
+    st.write("---")
+    #st.write("##")
+    imagen_columna, texto_columna = st.columns((1,2))
+    with imagen_columna:
+        st.image("img/proceso.jpg")
         
-        with texto_columna:
-            st.subheader("Automatización de procesos")
-            st.write(
-                """
-                Si realizas cualquier tipo de tarea repetitiva como por ejemplo introducir datos en excel u otras aplicaciones, gestión de facturas, envío de emails a proveedores etc Lo que quizás necesitas es una automatización de tareas para poder liberar recursos de esas actividades y poder emplearlos en otras tareas más productivas.
-                """
-            )
-            st.write("[Ver servicios > ](https://streamlit.io/)")
+    with texto_columna:
+        st.subheader("Automatización de procesos")
+        st.write(
+            """
+            Si realizas cualquier tipo de tarea repetitiva como por ejemplo introducir datos en excel u otras aplicaciones, gestión de facturas, envío de emails a proveedores etc Lo que quizás necesitas es una automatización de tareas para poder liberar recursos de esas actividades y poder emplearlos en otras tareas más productivas.
+            """
+        )
+        st.write("[Ver servicios > ](https://streamlit.io/)")
 
-    with st.container():
-        st.write("---")
-        #st.write("##")
-        imagen_columna, texto_columna = st.columns((1,2))
-        with imagen_columna:
-            st.image("img/chatbot.png")
+with st.container():
+    st.write("---")
+    #st.write("##")
+    imagen_columna, texto_columna = st.columns((1,2))
+    with imagen_columna:
+        st.image("img/datos.jpg")
         
-        with texto_columna:
-            st.subheader("Visualización de datos")
-            st.write(
-                """
-                Si sientes que no tienes una visión clara de datos de tu negocio lo que necesitas es una aplicación en la que puedas tener toda la información de interes de tu empresa.
-                """
-            )
-            st.write("[Ver servicios > ](https://streamlit.io/)")
+    with texto_columna:
+        st.subheader("Visualización de datos")
+        st.write(
+            """
+            Si sientes que no tienes una visión clara de datos de tu negocio lo que necesitas es una aplicación en la que puedas tener toda la información de interes de tu empresa.
+            """
+        )
+        st.write("[Ver servicios > ](https://streamlit.io/)")
 
         
