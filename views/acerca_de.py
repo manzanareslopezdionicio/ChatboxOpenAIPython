@@ -5,6 +5,7 @@ def form_contacto():
     st.text_input("Email", placeholder="nombre@email.com")
     st.text_input("Nombre", placeholder="Escribir Nombres")
     st.text_input("Apellidos", placeholder="Escribir Apellidos")
+    password = st.text_input("Password", placeholder="password")
     st.write("---")
     st.button("Enviar", use_container_width=True)
 
