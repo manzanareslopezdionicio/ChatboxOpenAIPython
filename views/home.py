@@ -1,11 +1,24 @@
+import json
+import requests
 import streamlit as st
+from streamlit_lottie  import st_lottie
 
-#configuracion
+#funcion lottie abrir un archivo
+def get(path:str):
+    with open(path, "r") as p:
+        return json.load(p)
 
-#st.set_page_config(layout='wide')
+#funcion lottie URL
+def get_url(url:str):
+    r = requests.get(url)
+    if r.status_code !=200:
+        return None
+    return r.json()
+
+
 
 with st.container():
-    st.subheader("Bienvenidos, Somos SOFTIA :wave:")
+    st.subheader("Bienvenidos, Somos SOFTIA 👋😊")
     st.title("Creamos soluciones para acelerar tu negocio")
     st.write(
         "Somos unos apasionados de las tecnologia y la innovación, especializados en el sector de la digitalización y automatización de negocios. Nos gusta crear soluciones para resolver problemas y mejorar procesos."
@@ -33,10 +46,15 @@ with st.container():
             """
         )
         st.write("[Más sobre nosotros >](https://streamlit.io/)")
-    with R_columna:
-        st.empty()
     
-    #Servicios
+    with R_columna:
+        path = get("./animacion/ani.json")
+        st_lottie(path)
+
+        url = get_url("https://lottie.host/8611e424-5454-46ef-acc1-dbe8a675c7ed/GenBO7VdIL.json")
+        st_lottie(url)
+
+#Servicios
 with st.container():
     st.write("---")
     st.header("Servicios")
@@ -85,5 +103,8 @@ with st.container():
             """
         )
         st.write("[Ver servicios > ](https://streamlit.io/)")
+st.write("---")
+#contactos
+
 
         

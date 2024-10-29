@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.set_page_config(layout="wide")
+
 home = st.Page  (
     page="views/home.py",
     title="Inicio",
@@ -31,8 +33,6 @@ pg = st.navigation(
         "Projectos:": [project_1_page, project_2_page],
     }
 )
-
-
 
 # --- SHARED ON ALL PAGES ---
 st.logo("img/chatbot.png")
