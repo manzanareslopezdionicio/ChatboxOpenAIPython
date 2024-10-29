@@ -1,8 +1,9 @@
 import json
-import requests
+import requests #pip install requests
 import streamlit as st
-from streamlit_lottie  import st_lottie
+from streamlit_lottie  import st_lottie # pip install streamlit-lottie
 
+#https://lottiefiles.com/
 #funcion lottie abrir un archivo
 def get(path:str):
     with open(path, "r") as p:
@@ -109,6 +110,8 @@ with st.container():
     c_columna, inf_columna = st.columns((1,2))
     with c_columna:
         st.subheader("📧 Contactos")
+        #https://formsubmit.co/
+        #https://www.w3schools.com/howto/howto_css_contact_form.asp
         contacto_form = """
         <form action="https://formsubmit.co/manzanaresdionicio@gmail.com" method="POST">
             <input type="hidden" name="_captcha" value="false">
