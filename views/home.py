@@ -109,16 +109,25 @@ with st.container():
     c_columna, inf_columna = st.columns((2))
     with c_columna:
         st.subheader("📧 Contactos")
-        form = st.form(key="home", clear_on_submit=True)
+        """
+        <form action="https://formsubmit.co/your@email.com" method="POST">
+        <input type="text" name="name" required>
+        #<input type="email" name="email" required>
+        <button type="submit">Send</button>
+        </form>
+        
+        """
 
-        with form:
-            input_nombre = st.text_input("Nombre:", placeholder="Escriba su nombre aquí.")
-            input_email = st.text_input("Correo Electronico:",placeholder="E-mail@unan.com")
-            button_submit = form.form_submit_button("Enviar ➢")
+        #form = st.form(key="home", clear_on_submit=True)
+
+        #with form:
+           # input_nombre = st.text_input("Nombre:", placeholder="Escriba su nombre aquí.")
+           # input_email = st.text_input("Correo Electronico:",placeholder="E-mail@unan.com")
+           # button_submit = form.form_submit_button("Enviar ➢")
 
     with inf_columna:
         st.subheader("Estamos ubicados")
     
-    st.write("---")
+    #st.write("---")
 
         
