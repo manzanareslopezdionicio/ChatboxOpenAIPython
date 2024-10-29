@@ -106,18 +106,26 @@ with st.container():
 #contactos
 with st.container(): 
     st.write("---")
-    c_columna, inf_columna = st.columns((2))
+    c_columna, inf_columna = st.columns((1,2))
     with c_columna:
         st.subheader("📧 Contactos")
-        """
-        <form action="https://formsubmit.co/your@email.com" method="POST">
-        <input type="text" name="name" required>
-        #<input type="email" name="email" required>
-        <button type="submit">Send</button>
+        contacto_form = """
+        <form action="https://formsubmit.co/manzanaresdionicio@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="name" placeholder="Escriba su nombre" required>
+            <input type="email" name="email" placeholder="nombre@email.com" required>
+            <textarea name="message" placeholder="Su mensajes"></textarea>
+            <button type="submit">Enviar...</button>
         </form>
         
         """
+    st.markdown(contacto_form, unsafe_allow_html=True)
 
+    #archivo CSS
+    def local_css(file_name):
+        with open(file_name) as f:
+            st.markdown(f"<style>{f.read()}", unsafe_allow_html=True)
+    local_css("css/style.css")
         #form = st.form(key="home", clear_on_submit=True)
 
         #with form:
@@ -125,9 +133,19 @@ with st.container():
            # input_email = st.text_input("Correo Electronico:",placeholder="E-mail@unan.com")
            # button_submit = form.form_submit_button("Enviar ➢")
 
-    with inf_columna:
-        st.subheader("Estamos ubicados")
-    
-    #st.write("---")
-
-        
+#footer
+with st.container():   
+    st.write("---")
+    p_1, p_2, p_3 = st.columns((3))
+    with p_1:
+        st.subheader("Contacto")
+        st.write("***Direccion:*** Juigalpa, chontales Nicaragua")
+        st.write("***Telefono:*** +(505) 0000-0000")
+    with p_2:
+        st.subheader("Servicios")
+        st.write("Diseño de aplicaciones")
+        st.write("Automatizacion de proceso")
+        st.write("Visualizacion de datos")
+       
+    with p_3:
+        st.subheader("Redes")
