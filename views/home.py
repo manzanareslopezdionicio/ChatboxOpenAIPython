@@ -102,7 +102,7 @@ with st.container():
             Si sientes que no tienes una visión clara de datos de tu negocio lo que necesitas es una aplicación en la que puedas tener toda la información de interes de tu empresa.
             """
         )
-        st.write("[Ver servicios > ](https://streamlit.io/)")
+        st.write("[Ver servicios >](https://streamlit.io/)")
 
 #contactos
 with st.container(): 
@@ -152,3 +152,6 @@ with st.container():
        
     with p_3:
         st.subheader("Redes")
+        st.markdown("[YOUTUBE](https://www.youtube.com/)")
+        st.markdown("[Facebook](https://www.markdownguide.org/cheat-sheet/)")
+        st.markdown("[Instagram](https://www.markdownguide.org/cheat-sheet/)")
