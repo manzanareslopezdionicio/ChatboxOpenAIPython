@@ -51,8 +51,8 @@ with st.container():
         path = get("./animacion/ani.json")
         st_lottie(path)
 
-        url = get_url("https://lottie.host/8611e424-5454-46ef-acc1-dbe8a675c7ed/GenBO7VdIL.json")
-        st_lottie(url)
+        #url = get_url("https://lottie.host/8611e424-5454-46ef-acc1-dbe8a675c7ed/GenBO7VdIL.json")
+        #st_lottie(url)
 
 #Servicios
 with st.container():
