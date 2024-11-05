@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(layout="wide")
 
-home = st.Page  (
+home = st.Page (
     page="views/home.py",
     title="Inicio",
     icon="🏠",
