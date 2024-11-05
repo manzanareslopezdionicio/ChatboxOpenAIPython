@@ -16,7 +16,6 @@ def get_url(url:str):
         return None
     return r.json()
 
-
 with st.container():
     st.subheader("Bienvenidos, Somos SOFTIA 👋😊")
     st.title("Creamos soluciones para acelerar tu negocio")
@@ -110,6 +109,7 @@ with st.container():
     c_columna, inf_columna = st.columns((1,2))
     with c_columna:
         st.subheader("📧 Contactos")
+        
         #https://formsubmit.co/
         #https://www.w3schools.com/howto/howto_css_contact_form.asp
         contacto_form = """
