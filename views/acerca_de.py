@@ -25,26 +25,26 @@ with  col2:
     if st.button("Contacto"):
         ver_form_contacto()
 
-# --- EXPERIENCE & QUALIFICATIONS ---
+# --- Experiencia y calificaciones ---
 st.write("\n")
-st.subheader("Experience & Qualifications", anchor=False)
+st.subheader("Experiencia y calificaciones", anchor=False)
 st.write(
     """
-    - 7 Years experience extracting actionable insights from data
-    - Strong hands-on experience and knowledge in Python and Excel
-    - Good understanding of statistical principles and their respective applications
-    - Excellent team-player and displaying a strong sense of initiative on tasks
+    - 7 años de experiencia extrayendo información útil a partir de datos.
+    - Fuerte experiencia práctica y conocimiento en Python y Excel.
+    - Buen conocimiento de los principios estadísticos y sus respectivas aplicaciones.
+    - Excelente jugador de equipo y con un fuerte sentido de iniciativa en las tareas.
     """
 )
 
 # --- SKILLS ---
 st.write("\n")
-st.subheader("Hard Skills", anchor=False)
+st.subheader("Habilidades", anchor=False)
 st.write(
     """
-    - Programming: Python (Scikit-learn, Pandas), SQL, VBA
-    - Data Visualization: PowerBi, MS Excel, Plotly
-    - Modeling: Logistic regression, linear regression, decision trees
-    - Databases: Postgres, MongoDB, MySQL
+    - Programación: Python (Scikit-learn, Pandas), SQL, VBA
+    - Visualización de Datos: PowerBi, MS Excel, Plotly
+    - Modelado: Logistic regression, linear regression, decision trees
+    - Base de Datos: Postgres, MongoDB, MySQL
     """
 )
