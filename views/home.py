@@ -17,7 +17,7 @@ def get_url(url:str):
     return r.json()
 
 with st.container():
-    st.subheader("Bienvenidos, Somos SOFTIA 👋😊")
+    st.subheader("Bienvenidos, Somos SOFTIA 👋")
     st.title("Creamos soluciones para acelerar tu negocio")
     st.write(
         "Somos unos apasionados de las tecnologia y la innovación, especializados en el sector de la digitalización y automatización de negocios. Nos gusta crear soluciones para resolver problemas y mejorar procesos."
