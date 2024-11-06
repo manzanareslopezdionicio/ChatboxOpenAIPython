@@ -1,22 +1,21 @@
 import re
-
+import time
 import streamlit as st
 #import requests  # pip install requests
 
 #WEBHOOK_URL = st.secrets["WEBHOOK_URL"]
 
 def is_valid_email(email):
-    # Basic regex pattern for email validation
+    # Patrón de expresiones regulares básico para la validación de correo electrónico
     email_pattern = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
     return re.match(email_pattern, email) is not None
-
 
 def contact_form():
     with st.form("contact_form"):
         name = st.text_input("Nombres y Apellidos.")
         email = st.text_input("Correo electrónico:")
         message = st.text_area("Su Mensaje:")
-        submit_button = st.form_submit_button("Submit")
+        submit_button = st.form_submit_button("Enviar")
 
     if submit_button:
         
@@ -38,5 +37,6 @@ def contact_form():
         
         if submit_button: 
             st.success("Se envio satisfactoriamente.")
+            time.sleep(2)
             st.rerun()
        
