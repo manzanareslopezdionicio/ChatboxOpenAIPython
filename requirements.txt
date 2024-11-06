@@ -1,7 +1,7 @@
 groq
 pandas
 Pillow
-Requests
-streamlit
-streamlit_lottie
 streamlit_option_menu
+Requests==2.32.3
+streamlit==1.39.0
+streamlit_lottie==0.0.5
