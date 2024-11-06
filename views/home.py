@@ -128,7 +128,7 @@ with st.container():
     def local_css(file_name):
         with open(file_name) as f:
             st.markdown(f"<style>{f.read()}", unsafe_allow_html=True)
-    local_css("css/style.css")
+    local_css("./css/style.css")
         #form = st.form(key="home", clear_on_submit=True)
 
         #with form:

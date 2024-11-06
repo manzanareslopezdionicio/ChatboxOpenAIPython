@@ -31,7 +31,7 @@ pg = st.navigation(
         "Información:": [home, acerca_de_page],
         "Projectos:": [project_1_page, project_2_page],
     }
-)
+    )
 # --- SHARED ON ALL PAGES ---
 st.logo("img/chatbot.png")
 st.sidebar.markdown("© Elaborado con ❤️ por [Streamlit](https://streamlit.io/gallery)")
