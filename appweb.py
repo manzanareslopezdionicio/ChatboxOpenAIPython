@@ -17,7 +17,7 @@ acerca_de_page = st.Page(
 project_1_page = st.Page(
     page="views/ventas.py",
     title="ventas",
-    icon="📊",
+    icon="🛒",
 )
 project_2_page = st.Page(
     page="views/chatbot.py",
