@@ -1,17 +1,18 @@
 import streamlit as st
 from forms.contacto import contact_form
 
-@st.dialog("contacto") #.experimental_dialog("Contacto")
+# @st.dialog("cont")
+# def ver_contacto():
+#     name = st.text_input("Nombre:", placeholder="Escribir Nombres")
+#     email = st.text_input("Email:", placeholder="nombre@email.com")
+#     message = st.text_area("Mensaje:")
+#     st.write("---")
+#     submit_button = st.button("Enviar", use_container_width=True)
+
+#Ventana modal
+@st.dialog("contacto") 
 def ver_form_contacto():
     contact_form()
-    #name = st.text_input("Nombre:", placeholder="Escribir Nombres")
-    #email = st.text_input("Email:", placeholder="nombre@email.com")
-    #message = st.text_area("Mensaje:")
-    #st.write("---")
-    #submit_button = st.button("Enviar", use_container_width=True)
-
-    #if submit_button:
-     #   st.success("Mensaje enviado satisfactoriamente...")
 
 col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
 with col1:
@@ -25,6 +26,9 @@ with  col2:
     if st.button("Contacto"):
         ver_form_contacto()
 
+    # if st.button("cont"):
+    #    ver_contacto()
+
 # --- Experiencia y calificaciones ---
 st.write("\n")
 st.subheader("Experiencia y calificaciones", anchor=False)
@@ -37,7 +41,7 @@ st.write(
     """
 )
 
-# --- SKILLS ---
+# --- HABILIDADES ---
 st.write("\n")
 st.subheader("Habilidades", anchor=False)
 st.write(
