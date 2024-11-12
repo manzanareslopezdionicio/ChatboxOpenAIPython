@@ -112,29 +112,29 @@ with st.container():
         
         #https://formsubmit.co/
         #https://www.w3schools.com/howto/howto_css_contact_form.asp
-        contacto_form = """
-        <form action="https://formsubmit.co/manzanaresdionicio@gmail.com" method="POST">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="text" name="name" placeholder="Escriba su nombre" required>
-            <input type="email" name="email" placeholder="nombre@email.com" required>
-            <textarea name="message" placeholder="Su mensajes"></textarea>
-            <button type="submit">Enviar...</button>
-        </form>
+    #     contacto_form = """
+    #     <form action="https://formsubmit.co/manzanaresdionicio@gmail.com" method="POST">
+    #         <input type="hidden" name="_captcha" value="false">
+    #         <input type="text" name="name" placeholder="Escriba su nombre" required>
+    #         <input type="email" name="email" placeholder="nombre@email.com" required>
+    #         <textarea name="message" placeholder="Su mensajes"></textarea>
+    #         <button type="submit">Enviar...</button>
+    #     </form>
         
-        """
-    st.markdown(contacto_form, unsafe_allow_html=True)
+    #     """
+    # st.markdown(contacto_form, unsafe_allow_html=True)
 
     #archivo CSS
-    def local_css(file_name):
-        with open(file_name) as f:
-            st.markdown(f"<style>{f.read()}", unsafe_allow_html=True)
-    local_css("./css/style.css")
-        #form = st.form(key="home", clear_on_submit=True)
+    # def local_css(file_name):
+    #     with open(file_name) as f:
+    #         st.markdown(f"<style>{f.read()}", unsafe_allow_html=True)
+    # local_css("./css/style.css")
+        form = st.form(key="home", clear_on_submit=True)
 
-        #with form:
-           # input_nombre = st.text_input("Nombre:", placeholder="Escriba su nombre aquí.")
-           # input_email = st.text_input("Correo Electronico:",placeholder="E-mail@unan.com")
-           # button_submit = form.form_submit_button("Enviar ➢")
+        with form:
+           input_nombre = st.text_input("Nombre:", placeholder="Escriba su nombre aquí.")
+           input_email = st.text_input("Correo Electronico:",placeholder="E-mail@unan.com")
+           button_submit = form.form_submit_button("Enviar ➢")
 
 #footer
 with st.container():   
