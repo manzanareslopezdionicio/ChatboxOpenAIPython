@@ -120,7 +120,6 @@ with st.container():
     #         <textarea name="message" placeholder="Su mensajes"></textarea>
     #         <button type="submit">Enviar...</button>
     #     </form>
-        
     #     """
     # st.markdown(contacto_form, unsafe_allow_html=True)
 
