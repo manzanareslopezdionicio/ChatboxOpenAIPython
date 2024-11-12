@@ -107,7 +107,7 @@ with st.container():
 with st.container(): 
     st.write("---")
     c_columna, inf_columna = st.columns((1,2))
-    with c_columna:
+    #with c_columna:
         st.subheader("📧 Contactos")
         
         #https://formsubmit.co/
