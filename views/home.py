@@ -108,7 +108,7 @@ with st.container():
     st.write("---")
     c_columna, inf_columna = st.columns((1,2))
     #with c_columna:
-        st.subheader("📧 Contactos")
+    st.subheader("📧 Contactos")
         
         #https://formsubmit.co/
         #https://www.w3schools.com/howto/howto_css_contact_form.asp
@@ -129,9 +129,9 @@ with st.container():
     #     with open(file_name) as f:
     #         st.markdown(f"<style>{f.read()}", unsafe_allow_html=True)
     # local_css("./css/style.css")
-        form = st.form(key="home", clear_on_submit=True)
+    form = st.form(key="home", clear_on_submit=True)
 
-        with form:
+    with form:
            input_nombre = st.text_input("Nombre:", placeholder="Escriba su nombre aquí.")
            input_email = st.text_input("Correo Electronico:",placeholder="E-mail@unan.com")
            button_submit = form.form_submit_button("Enviar ➢")
